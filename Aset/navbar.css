@@ -43,6 +43,10 @@
   text-decoration: none;
 }
 
+.nav-menu-item a:hover {
+  color: #e97e26;
+}
+
 .nav--right {
   padding-right: 20px;
   align-items: center;
@@ -56,5 +60,9 @@
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  background-color: #101222;
+  background-color: #7e1c03;
+}
+
+.kontak:hover {
+  background-color: #cc640e;
 }

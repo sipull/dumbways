@@ -9,6 +9,10 @@ label {
   background-color: #d9dcf7;
 }
 
+input,select{
+  font-family: "Comfortaa", cursive;
+}
+
 div.container {
   flex-direction: column;
   display: flex;

@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="icon" type="image/sipul" href="/picture/logo.png" />
+    <link rel="stylesheet" href="/css/myproject.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav--container">
+        <div class="nav--left">
+          <a href="/index.html" class="logo">
+            <img src="/picture/logo.png" alt="sipul" />
+          </a>
+          <ul class="nav--menu">
+            <li class="nav-menu-item"><a href="/index.html">Home</a></li>
+            <li class="nav-menu-item">
+              <a href="/html/myproject.html">My Project</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="/html/card.html">Card</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="/html/blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav--right">
+          <a href="/html/contact.html" class="kontak">Contact me</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>
+        <b> ADD MY PROJECT </b>
+      </h1>
+      <form action="./form.php" id="form">
+        <label for="namepro">Project Name</label>
+        <input class="namepro" type="text" id="namepro" name="namepro" />
+        <div class="containerlabel">
+          <label for="dateend">End Date</label>
+          <label for="datestart">Start Date</label>
+        </div>
+        <div class="date">
+          <input
+            class="datestart"
+            type="text"
+            id="datestart"
+            name="datestart"
+          />
+          <input class="dateend" type="text" id="dateend" name="dateend" />
+        </div>
+        <label for="description">Description</label>
+        <input
+          class="description"
+          type="text"
+          id="description"
+          name="description"
+        />
+        <label class="tech" for="technologies">Technologies</label>
+        <div class="technologies">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="nodejs" />
+          <label for="vehicle1"> Node Js</label>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="nextjs" />
+          <label for="vehicle2"> Next Js</label>
+          <input
+            type="checkbox"
+            id="vehicle3"
+            name="vehicle3"
+            value="reactjs"
+          />
+          <label for="vehicle3"> React Js</label>
+          <input
+            type="checkbox"
+            id="vehicle4"
+            name="vehicle4"
+            value="typescript"
+          />
+          <label for="vehicle4"> TypeScript</label>
+        </div>
+        <label for="uploadimage">Upload Image</label>
+        <br />
+
+        <!-- actual upload which is hidden -->
+        <input type="file" id="actual-btn" hidden />
+
+        <!-- our custom upload button -->
+        <label for="actual-btn" class="label">Choose File</label>
+
+        <!-- name of file chosen -->
+        <span id="file-chosen">No file chosen</span>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="/js/myproject.js"></script>
+  </body>
+</html>

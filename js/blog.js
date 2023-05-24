@@ -1,28 +1,29 @@
-const data =[
-    {
-        name: 'Blog 1'
-    },
-    {
-        name: 'Blog 2'
-    },
-]
+// const data =[
+//     {
+//         name: 'Blog 1'
+//     },
+//     {
+//         name: 'Blog 2'
+//     },
+// ]
 
-// get template
-const foodTemplate = document
-  .querySelector("#food-template")
-  .cloneNode(true).content;
+// // get template
+// const foodTemplate = document
+//   .querySelector("#food-template")
+//   .cloneNode(true).content;
 
-// get food list
-const foodList = document.querySelector(".foods__list");
+// // get list
+// const foodList = document.querySelector(".foods__list");
 
-const render = () => {
-  data.forEach((food) => {
-    const foodElement = foodTemplate.cloneNode(true);
-    // fill the template with data
-    foodElement.querySelector(".foods__item-name").textContent = food.name;
+// const render = () => {
+//   data.forEach((food) => {
+    // const foodElement = foodTemplate.cloneNode(true);
+    // // fill the template with data
+//     foodElement.querySelector(".foods__item-name").textContent = food.name;
 
-    foodList.appendChild(foodElement);
-  });
-};
+//     foodList.appendChild(foodElement);
+//   });
+// };
 
-render();
+// render();
+console.log("selamat pagi")

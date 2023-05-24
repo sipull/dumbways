@@ -12,7 +12,6 @@ html {
 
 .menu {
   width: 70%;
-  margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -41,7 +40,7 @@ html {
 }
 
 .description {
-  display: flex;
+  display: block;
   gap: 10px;
   text-align: left;
 }
@@ -55,6 +54,19 @@ html {
 .informasitech{
   display: flex;
   gap: 10px;
+}
+
+.informasitech--ats{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.informasitech--bwh{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .artikel {

@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project</title>
     <link rel="icon" type="image/sipul" href="/picture/logo.png" />
+    <link
+      rel="stylesheet"
+      href="/Aset/fontawesome/fontawesome-free-6.4.0-web/css/all.css"
+    />
     <link rel="stylesheet" href="/css/myproject.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
   </head>
@@ -36,67 +40,178 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <h1>
-        <b> ADD MY PROJECT </b>
-      </h1>
-      <form action="./form.php" id="form">
-        <label for="namepro">Project Name</label>
-        <input class="namepro" type="text" id="namepro" name="namepro" />
-        <div class="containerlabel">
-          <label for="dateend">End Date</label>
-          <label for="datestart">Start Date</label>
-        </div>
-        <div class="date">
-          <input
-            class="datestart"
-            type="text"
-            id="datestart"
-            name="datestart"
-          />
-          <input class="dateend" type="text" id="dateend" name="dateend" />
-        </div>
-        <label for="description">Description</label>
-        <input
-          class="description"
-          type="text"
-          id="description"
-          name="description"
-        />
-        <label class="tech" for="technologies">Technologies</label>
-        <div class="technologies">
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="nodejs" />
-          <label for="vehicle1"> Node Js</label>
-          <input type="checkbox" id="vehicle2" name="vehicle2" value="nextjs" />
-          <label for="vehicle2"> Next Js</label>
-          <input
-            type="checkbox"
-            id="vehicle3"
-            name="vehicle3"
-            value="reactjs"
-          />
-          <label for="vehicle3"> React Js</label>
-          <input
-            type="checkbox"
-            id="vehicle4"
-            name="vehicle4"
-            value="typescript"
-          />
-          <label for="vehicle4"> TypeScript</label>
-        </div>
-        <label for="uploadimage">Upload Image</label>
-        <br />
+    <div>
+      <div>
+        <div class="container">
+          <form action="./form.php" id="form">
+            <h1>ADD MY PROJECT</h1>
+            <div class="container--form">
+              <div>
+                <label for="namepro">Project Name</label>
+                <input
+                  class="namepro"
+                  type="text"
+                  id="namepro"
+                  name="namepro"
+                />
+              </div>
+              <div class="containerlabel">
+                <label for="dateend">End Date</label>
+                <label for="datestart">Start Date</label>
+              </div>
+              <div class="date">
+                <input
+                  class="datestart"
+                  type="date"
+                  id="datestart"
+                  name="datestart"
+                />
+                <input
+                  class="dateend"
+                  type="date"
+                  id="dateend"
+                  name="dateend"
+                />
+              </div>
+              <label for="description">Description</label>
+              <textarea
+                class="description"
+                type="text"
+                id="description"
+                name="description"
+              ></textarea>
+              <label class="tech" for="technologies">Technologies</label>
+              <div class="technologies">
+                <input
+                  type="checkbox"
+                  id="vehicle1"
+                  name="vehicle1"
+                  value="nodejs"
+                />
+                <label for="vehicle1"> Node Js</label>
+                <input
+                  type="checkbox"
+                  id="vehicle2"
+                  name="vehicle2"
+                  value="nextjs"
+                />
+                <label for="vehicle2"> Next Js</label>
+                <input
+                  type="checkbox"
+                  id="vehicle3"
+                  name="vehicle3"
+                  value="reactjs"
+                />
+                <label for="vehicle3"> React Js</label>
+                <input
+                  type="checkbox"
+                  id="vehicle4"
+                  name="vehicle4"
+                  value="typescript"
+                />
+                <label for="vehicle4"> TypeScript</label>
+              </div>
+              <label for="uploadimage">Upload Image</label>
+              <div class="label">
+                <input type="file" id="actual-btn" hidden />
+                <label for="actual-btn" class="label--button"
+                  >Choose File</label
+                >
+                <i class="fa-solid fa-paperclip"></i>
+              </div>
 
-        <!-- actual upload which is hidden -->
-        <input type="file" id="actual-btn" hidden />
+              <button class="submit" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
-        <!-- our custom upload button -->
-        <label for="actual-btn" class="label">Choose File</label>
+    <hr class="line" />
 
-        <!-- name of file chosen -->
-        <span id="file-chosen">No file chosen</span>
-        <button class="submit" type="submit">Submit</button>
-      </form>
+    <div class="teks">
+      <h2>My Project</h2>
+    </div>
+
+    <div class="blog-list">
+      <div class="blog-item">
+        <div class="blog-image">
+          <img src="/picture/gambar.webp" alt="blog_img" />
+        </div>
+        <div class="blog-content">
+          <h1><a href="/html/blog.html">Dies Natalis Fakultas Teknik</a></h1>
+          <div class="blog-detail">
+            12 juli 2023 22:30 WIB | Duration : 2 minggu
+          </div>
+          <p>
+            Setelah sekitar sembilan tahun diresmikan, Fakultas Teknik (FT)
+            Universitas Hasyim Asy’ari (Unhasy), baru kali ini Badan Eksekutif
+            Mahasiswa (BEM) merayakan Dies Natalis dengan acara meriah di
+            halaman gedung C Unhasy, Senin (18/7/2022).
+          </p>
+        </div>
+        <div class="blog-tech">
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-node-js"></i>
+          <i class="fa-solid fa-file-code"></i>
+        </div>
+        <div class="btn-group">
+          <button class="editpost">Edit</button>
+          <button class="deletepost">Delete</button>
+        </div>
+      </div>
+      <div class="blog-item">
+        <div class="blog-image">
+          <img src="/picture/bromo.webp" alt="blog_img" />
+        </div>
+        <div class="blog-content">
+          <h1><a href="/html/blog.html">Bromo Tengger Semeru</a></h1>
+          <div class="blog-detail">
+            26 juli 2023 13:30 WIB | Duration : 4 minggu
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. 
+          </p>
+        </div>
+        <div class="blog-tech">
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-node-js"></i>
+          <i class="fa-solid fa-file-code"></i>
+        </div>
+        <div class="btn-group">
+          <button class="editpost">Edit</button>
+          <button class="deletepost">Delete</button>
+        </div>
+      </div>
+      <div class="blog-item">
+        <div class="blog-image">
+          <img src="/picture/kopdar.webp" alt="blog_img" />
+        </div>
+        <div class="blog-content">
+          <h1><a href="/html/blog.html">KopdarGab Paguyuban honda StreetFire Community</a></h1>
+          <div class="blog-detail">
+            26 juli 2023 13:30 WIB | Duration : 4 minggu
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. 
+          </p>
+        </div>
+        <div class="blog-tech">
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-node-js"></i>
+          <i class="fa-solid fa-file-code"></i>
+        </div>
+        <div class="btn-group">
+          <button class="editpost">Edit</button>
+          <button class="deletepost">Delete</button>
+        </div>
+      </div>
     </div>
     <script src="/js/myproject.js"></script>
   </body>

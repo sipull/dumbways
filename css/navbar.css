@@ -41,9 +41,11 @@
   font-weight: 600;
   color: black;
   text-decoration: none;
+  transition-duration: 0.4s;
 }
 
-.nav-menu-item a:hover {
+.nav-menu-item a:hover,
+.nav-menu-item a:active {
   color: #e97e26;
 }
 
@@ -60,7 +62,8 @@
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  background-color: #7e1c03;
+  background-color: #3f1400;
+  transition-duration: 0.4s;
 }
 
 .kontak:hover {

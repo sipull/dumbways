@@ -2,10 +2,7 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Comfortaa", cursive;
-}
-
+html,
 input,
 select,
 textarea,
@@ -21,7 +18,7 @@ label {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #6d7de433;
+  background-color: #ebbb9341;
 }
 
 .container h1 {
@@ -46,7 +43,7 @@ label {
 
 .containerlabel {
   display: flex;
-  gap: 115px;
+  gap: 128px;
 }
 
 .date {
@@ -89,48 +86,59 @@ label {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.tech {
-  display: block;
-}
-
 .technologies {
   width: 100%;
   margin: 10px 0 20px 0;
   border-width: 0 3px 3px 0;
 }
 
+.radio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*fr = frame jika ada 2 value maka dia akan membagi 2 Sama rata,
+  jika ada penambahan value maka akan dikurangi jumlah value tersebut lalu di bagi 2*/
+  gap: 10px;
+}
+
+.radio-item {
+  display: flex;
+  gap: 10px;
+}
+
 .label {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
-  padding: 10px;
+  align-items: center;
   border-radius: 4px;
+  padding: 12px 12px 12px 0;
   margin: 10px 0 20px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .label--button {
-  background-color: #ffffff;
-  border-radius: 4px 0 0 4px;
-  display: inline-block;
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 4px;
   cursor: pointer;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
+  color: #ffffff;
+  border: 3px solid #3f1400;
+  background-color: #3f1400;
   transition-duration: 0.4s;
 }
 
 .label--button:hover {
-  color: #cc640e;
+  border: 3px solid #cc640e;
+  background-color: #cc640e;
 }
 
 .submit {
+  font-family: "Comfortaa", cursive;
   display: block;
   background-color: #3f1400;
   color: white;
-  padding: 12px 20px;
-  margin: 10px 0 10px 0;
+  padding: 8px 33px;
+  margin: 10px 0 10px 290px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -141,13 +149,6 @@ label {
   background-color: #cc640e;
 }
 
-.line {
-  border: 1px solid #dbdbdb;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .teks {
   padding: 28px;
   margin: 20px;
@@ -155,12 +156,13 @@ label {
 }
 
 .blog-list {
-  margin-top: 20px;
-  margin-bottom: 80px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 40px;
+  margin: 20px auto 40px auto;
 }
 
 .blog-image {
@@ -177,7 +179,7 @@ label {
 }
 
 .blog-list h1 a {
-  font-size: medium;
+  font-size: large;
   text-decoration: none;
   color: #000;
 }
@@ -197,34 +199,31 @@ label {
 }
 
 .blog-content p {
-  margin-top: 12px;
+  margin: 12px 0 0 0;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
   text-align: justify;
 }
 
 .blog-detail {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 20px;
+  font-weight: 200;
+  font-size: 13px;
 }
 
-.blog-tech{
+.blog-tech {
   display: flex;
   gap: 10px;
-  margin: 10px 0 10px 0;
+  margin: 15px 0 15px 0;
 }
 
 .btn-group {
-  margin: 8px 0 0 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
 }
 
 .editpost {
-  padding: 6px 70px;
-  margin: 4px 2px;
+  width: 100%;
+  padding: 6px;
   border: none;
   border-radius: 7px;
   background: #ffccb5;
@@ -237,8 +236,8 @@ label {
 }
 
 .deletepost {
-  padding: 6px 60px;
-  margin: 4px 2px;
+  width: 100%;
+  padding: 6px;
   border: none;
   border-radius: 7px;
   background: #3f1400;
@@ -249,4 +248,16 @@ label {
 
 .deletepost:hover {
   background-color: #cc640e;
+}
+
+@media only screen and (max-width: 920px) {
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px auto 40px auto;
+  }
 }

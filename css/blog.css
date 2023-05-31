@@ -1,74 +1,73 @@
 html {
   font-family: "Comfortaa", cursive;
-  background-color: #b2e0ec;
+  background-color: #ebbb9341;
 }
 
-.judul {
-  color: #000000;
-  text-align: center;
-  margin: 15px;
-  padding: 10px;
-}
-
-.menu {
-  width: 70%;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container {
+.blog-list {
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
-  text-align: center;
-}
-
-.left {
-  display: flex;
-  margin: 20px;
-}
-
-.right {
-  display: block;
+  flex-direction: row;
   justify-content: center;
+  gap: 40px;
+}
+
+.blog-item {
+  width: 87%;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+  border: 2px solid #dbdbdb;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image img {
+  width: 547px;
+  height: 447px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.blog-content {
+  flex: 3;
   margin: 20px;
+}
+
+.blog-list h1 {
+  font-size: larger;
+  text-decoration: none;
+  color: #000;
+}
+
+.blog-tech {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.blog-detail {
+  margin: 15px 0 15px 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
 }
 
 .duration {
-  display: block;
-  text-align: left;
-  padding-bottom: 5px;
-}
-
-.description {
-  display: block;
-  gap: 10px;
-  text-align: left;
-}
-
-.technologies {
-  padding-top: 10px;
-  padding-bottom: 5px;
-  display: flex;
-}
-
-.informasitech{
   display: flex;
   gap: 10px;
 }
 
-.informasitech--ats{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.informasitech--bwh{
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.artikel {
+.blog-content p {
+  margin-top: 12px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
   text-align: justify;
 }

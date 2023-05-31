@@ -15,7 +15,7 @@ function ValidateEmail(mail) {
 }
 
 $form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  e.preventDefault(); //agar tidak merefresh atau reset
 
   const name = document.getElementById("name").value;
   if (name === "") {

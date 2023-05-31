@@ -23,27 +23,30 @@
             <img src="/picture/logo.png" alt="sipul" />
           </a>
           <ul class="nav--menu">
-            <li class="nav-menu-item"><a href="/index.html">Home</a></li>
-            <li class="nav-menu-item">
+            <li id="menu-home" class="nav-menu-item">
+              <a href="/index.html">Home</a>
+            </li>
+            <li id="menu-project" class="nav-menu-item">
               <a href="/html/myproject.html">My Project</a>
             </li>
-            <li class="nav-menu-item">
+            <li id="menu-card" class="nav-menu-item">
               <a href="/html/card.html">Card</a>
             </li>
-            <li class="nav-menu-item">
+            <li id="menu-blog" class="nav-menu-item">
               <a href="/html/blog.html">Blog</a>
             </li>
           </ul>
         </div>
         <div class="nav--right">
-          <a href="/html/contact.html" class="kontak">Contact me</a>
+          <a href="./contact.html" class="kontak">Contact me</a>
         </div>
       </div>
     </nav>
+
     <div>
       <div>
         <div class="container">
-          <form action="./form.php" id="form">
+          <form id="form">
             <h1>ADD MY PROJECT</h1>
             <div class="container--form">
               <div>
@@ -82,137 +85,76 @@
               ></textarea>
               <label class="tech" for="technologies">Technologies</label>
               <div class="technologies">
-                <input
-                  type="checkbox"
-                  id="vehicle1"
-                  name="vehicle1"
-                  value="nodejs"
-                />
-                <label for="vehicle1"> Node Js</label>
-                <input
-                  type="checkbox"
-                  id="vehicle2"
-                  name="vehicle2"
-                  value="nextjs"
-                />
-                <label for="vehicle2"> Next Js</label>
-                <input
-                  type="checkbox"
-                  id="vehicle3"
-                  name="vehicle3"
-                  value="reactjs"
-                />
-                <label for="vehicle3"> React Js</label>
-                <input
-                  type="checkbox"
-                  id="vehicle4"
-                  name="vehicle4"
-                  value="typescript"
-                />
-                <label for="vehicle4"> TypeScript</label>
+                <div class="radio-container">
+                  <div class="radio-item">
+                    <input
+                      type="checkbox"
+                      id="vehicle1"
+                      name="check"
+                      value="nodejs"
+                    />
+                    <label for="vehicle1"> Node Js</label>
+                  </div>
+                  <div class="radio-item">
+                    <input
+                      type="checkbox"
+                      id="vehicle2"
+                      name="check"
+                      value="nextjs"
+                    />
+                    <label for="vehicle2"> Next Js</label>
+                  </div>
+                  <div class="radio-item">
+                    <input
+                      type="checkbox"
+                      id="vehicle3"
+                      name="check"
+                      value="reactjs"
+                    />
+                    <label for="vehicle3"> React Js</label>
+                  </div>
+                  <div class="radio-item">
+                    <input
+                      type="checkbox"
+                      id="vehicle4"
+                      name="check"
+                      value="typescript"
+                    />
+                    <label for="vehicle4"> TypeScript</label>
+                  </div>
+                </div>
               </div>
               <label for="uploadimage">Upload Image</label>
               <div class="label">
-                <input type="file" id="actual-btn" hidden />
-                <label for="actual-btn" class="label--button"
-                  >Choose File</label
-                >
+                <div>
+                  <input type="file" id="actual-btn" hidden />
+
+                  <label for="actual-btn" class="label--button"
+                    >Choose File</label
+                  >
+
+                  <span id="file-chosen">No file chosen</span>
+                </div>
                 <i class="fa-solid fa-paperclip"></i>
               </div>
-
-              <button class="submit" type="submit">Submit</button>
+              <button class="submit" type="submit">submit</button>
             </div>
           </form>
         </div>
       </div>
     </div>
 
-    <hr class="line" />
-
     <div class="teks">
       <h2>My Project</h2>
     </div>
 
-    <div class="blog-list">
-      <div class="blog-item">
-        <div class="blog-image">
-          <img src="/picture/gambar.webp" alt="blog_img" />
-        </div>
-        <div class="blog-content">
-          <h1><a href="/html/blog.html">Dies Natalis Fakultas Teknik</a></h1>
-          <div class="blog-detail">
-            12 juli 2023 22:30 WIB | Duration : 2 minggu
-          </div>
-          <p>
-            Setelah sekitar sembilan tahun diresmikan, Fakultas Teknik (FT)
-            Universitas Hasyim Asy’ari (Unhasy), baru kali ini Badan Eksekutif
-            Mahasiswa (BEM) merayakan Dies Natalis dengan acara meriah di
-            halaman gedung C Unhasy, Senin (18/7/2022).
-          </p>
-        </div>
-        <div class="blog-tech">
-          <i class="fa-brands fa-react"></i>
-          <i class="fa-brands fa-node-js"></i>
-          <i class="fa-solid fa-file-code"></i>
-        </div>
-        <div class="btn-group">
-          <button class="editpost">Edit</button>
-          <button class="deletepost">Delete</button>
-        </div>
-      </div>
-      <div class="blog-item">
-        <div class="blog-image">
-          <img src="/picture/bromo.webp" alt="blog_img" />
-        </div>
-        <div class="blog-content">
-          <h1><a href="/html/blog.html">Bromo Tengger Semeru</a></h1>
-          <div class="blog-detail">
-            26 juli 2023 13:30 WIB | Duration : 4 minggu
-          </div>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. 
-          </p>
-        </div>
-        <div class="blog-tech">
-          <i class="fa-brands fa-react"></i>
-          <i class="fa-brands fa-node-js"></i>
-          <i class="fa-solid fa-file-code"></i>
-        </div>
-        <div class="btn-group">
-          <button class="editpost">Edit</button>
-          <button class="deletepost">Delete</button>
-        </div>
-      </div>
-      <div class="blog-item">
-        <div class="blog-image">
-          <img src="/picture/kopdar.webp" alt="blog_img" />
-        </div>
-        <div class="blog-content">
-          <h1><a href="/html/blog.html">KopdarGab Paguyuban honda StreetFire Community</a></h1>
-          <div class="blog-detail">
-            26 juli 2023 13:30 WIB | Duration : 4 minggu
-          </div>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. 
-          </p>
-        </div>
-        <div class="blog-tech">
-          <i class="fa-brands fa-react"></i>
-          <i class="fa-brands fa-node-js"></i>
-          <i class="fa-solid fa-file-code"></i>
-        </div>
-        <div class="btn-group">
-          <button class="editpost">Edit</button>
-          <button class="deletepost">Delete</button>
-        </div>
-      </div>
-    </div>
+    <div class="blog-list"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/chooseimg.js"></script>
     <script src="/js/myproject.js"></script>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

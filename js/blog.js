@@ -26,4 +26,3 @@
 // };
 
 // render();
-console.log("selamat pagi")

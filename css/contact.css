@@ -9,7 +9,8 @@ label {
   background-color: #ebbb9341;
 }
 
-input,select{
+input,
+select {
   font-family: "Comfortaa", cursive;
 }
 
@@ -90,4 +91,18 @@ form {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    padding: 20px;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .submit{
+    padding: 7px 14px;
+  }
 }

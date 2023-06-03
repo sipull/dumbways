@@ -1,136 +1,99 @@
 <html>
   <head>
-    <title>My Card</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/card.css" />
     <link
-      rel="stylesheet"
-      href="/Aset/fontawesome/fontawesome-free-6.4.0-web/css/all.css"
+    rel="stylesheet"
+    href="/Aset/fontawesome/fontawesome-free-6.4.0-web/css/all.css"
     />
-    <link rel="icon" type="image/sipul" href="./logo.png" />
-    <style>
-        body {margin:25px;}
-  
-        div.polaroid {
-          width: 80%;
-          background-color: #ffffff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          margin-bottom: 15px;
-          margin-left: auto;
-          margin-right: auto;
-          border-radius: 20px;
-        }
-        
-        div.container {
-          text-align: center;
-          padding: 10px 20px;
-          font-family: 'Comfortaa';
-        }
-        </style>
+    <link rel="icon" type="image" href="/picture/logo.png" />
+  <title>My Card</title>
   </head>
-  <body style="background-color: #ebbb9341;">
-    <div
-      style="
-        width: 350px;
-        border: 3px solid #000000;
-        margin: 90px auto;
-        padding: 30px;
-        border-radius: 10px;
-        background-color: #ffffff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      ">
-      <div 
-      style="display: flex;
-      gap: 69px;
-      align-items: center;">
-        <b style="font-family: 'Comfortaa', cursive; 
-      font-size: 20px;">Hi Welcome to my hut</b>
-      <a href="/index.html"
-      style="font-family: 'Comfortaa', cursive;
-      color: #000000;
-      display: flex;
-      align-items: center;
-      text-decoration: none;" >
-      <i
-      class="fa-solid fa-arrow-right-to-bracket fa-rotate-180"
-      style="display: flex; align-items: center; justify-content: space-between;"></i>
-      Back</a>
+  <body>
+
+    <!-- Navbar Section -->
+
+ <nav class="nav">
+  <div class="nav--container">
+    <div class="nav--left">
+      <a href="#" class="logo">
+        <img src="/picture/logo.png" alt="sipul" />
+      </a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    
-    <div>
-      </h2>
-      <p
-        style="
-          font-family: 'Comfortaa', cursive;
-          text-align: justify;
-          text-justify: inter-word;
-        "
-      >
+      <ul class="nav--menu">
+        <li class="nav-menu-item" id="menu-home">
+          <a href="/index.html">Home</a>
+        </li>
+        <li class="nav-menu-item" id="menu-project" >
+          <a href="/html/myproject.html">My Project</a>
+        </li>            
+        <li class="nav-menu-item" id="menu-card">
+          <a href="#">Card</a>
+        </li>
+        <li class="nav-menu-item" id="menu-blog">
+          <a href="/html/blog.html">Blog</a>
+        </li>
+        <li class="nav-menu-item, contact" id="menu-contact">
+          <a href="/html/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="nav--right">
+      <a href="/html/contact.html" class="kontak">Contact me</a>
+    </div>
+  </div>
+</nav>
+
+    <!-- hero section -->
+    <div class="hero-section">
+      <h1 class="judul">Hi Welcome to my hut</h1>
+      <p class="description">
         Hi, let me introduce myself. My name is Syaiful. You can call me ipul
         or. I was born in Jombang, East Java. Now, I live in Jombang and study
         here. My hobby is hiking and photography. If you want to see my photo,
         you can visit my instagram. Thank you for your attention.
       </p>
 
-      <div>
-        <a
-        style="
-          font-family: 'Comfortaa', cursive;
-          color: #ffffff;
-          margin: 13px auto;
-          padding: 10px;
-          border-radius: 20px;
-          text-decoration: none;
-          display: inline-block;
-          text-align: center;
-          background-color: #000000;
-          cursor: pointer;
-        "
-        href="https://bit.ly/studiosipul" target="_blank">
-        Portofolio</a>
-      </div>
-      <a
-        href="/document/cv.pdf" target="_blank"
-        style="
-          font-family: 'Comfortaa', cursive;
-          text-decoration: none;
-          color: #000000;
-          text-align: left;
-          margin: 10px;
-          margin-right: 0px;
-          display: inline-block;
-        "
-        >Download CV disini<i class="fa-solid fa-cloud-arrow-down"></i></a
-      >
+      <!-- fitur -->
 
-      <div style="
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-      margin-bottom: 40px">
-        <a href="https://www.linkedin.com/in/sipul" target="_blank" style="color: #000000;">
+      <div class="fitur">
+        <a href="https://bit.ly/studiosipul" target="_blank" class="portofolio">Portofolio</a>
+        <a href="/document/cv.pdf" target="_blank" class="cv">Download CV disini<i class="fa-solid fa-cloud-arrow-down"></i></a>
+      </div>
+
+      <!-- social media -->
+
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/sipul" target="_blank">
           <i class="fa-brands fa-linkedin fa-2xl"></i>
         </a>
-        <a href="https://www.instagram.com/__sipul/" target="_blank" style="color: #000000;">
+        <a href="https://www.instagram.com/__sipul/" target="_blank">
           <i class="fa-brands fa-square-instagram fa-2xl"></i>
         </a>
-        <a href="#" style="color: #000000;">
+        <a href="#">
           <i class="fa-brands fa-square-facebook fa-2xl"></i>
         </a>
-        <a href="https://twitter.com/_sipull?t=JW4ETPBwWPFLCypNS_IaQg&s=09" target="_blank" style="color: #000000;">
+        <a href="https://twitter.com/_sipull?t=JW4ETPBwWPFLCypNS_IaQg&s=09" target="_blank">
           <i class="fa-brands fa-square-twitter fa-2xl"></i>
         </a>
       </div>
+
+      <!-- foto -->
+
       <div class="polaroid">
         <img src="/picture/profile.jpg" alt="Profile"
         style="width:100%; border-radius: 15px 15px 0 0;">
         <div class="container">
         <h3>Moch.syaiullah yusuf</h3>
         <p>Frontend Developer</p>
-        </div>
+      </div>
     </div>
-  </div>
+  <script src="/js/navbar.js"></script>
   </body>
 </html>

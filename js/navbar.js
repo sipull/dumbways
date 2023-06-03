@@ -19,22 +19,32 @@ switch (lastItem) {
     projectElement.classList.add("active");
     break;
 
+  case "card.html":
+    const cardElement = document.querySelector("#menu-blog");
+    blogElement.classList.add("active");
+    break;
+
   case "blog.html":
     const blogElement = document.querySelector("#menu-blog");
     blogElement.classList.add("active");
     break;
+
+  case "contact.html":
+    const contactElement = document.querySelector("#menu-contact");
+    blogElement.classList.add("active");
+    break;
 }
 
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.nav--menu');
+const menu = document.querySelector("#mobile-menu");
+const menuLinks = document.querySelector(".nav--menu");
 
 // Display Mobile Menu
 const mobileMenu = () => {
-  menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
+  menu.classList.toggle("is-active");
+  menuLinks.classList.toggle("active");
 };
 
-menu.addEventListener('click', mobileMenu);
+menu.addEventListener("click", mobileMenu);
 
 // let hamburgerIsOpen = false;
 

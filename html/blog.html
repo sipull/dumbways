@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,36 +13,50 @@
       rel="stylesheet"
       href="/Aset/fontawesome/fontawesome-free-6.4.0-web/css/all.css"
     />
-    <title>Blog</title>
     <link rel="icon" type="image/sipul" href="/picture/logo.png" />
+    <title>Blog</title>
   </head>
   <body>
+
+    <!-- navbar -->
+
     <nav class="nav">
       <div class="nav--container">
         <div class="nav--left">
-          <a href="/index.html" class="logo">
+          <a href="#" class="logo">
             <img src="/picture/logo.png" alt="sipul" />
           </a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
           <ul class="nav--menu">
-            <li id="menu-home" class="nav-menu-item">
+            <li class="nav-menu-item" id="menu-home">
               <a href="/index.html">Home</a>
             </li>
-            <li id="menu-project" class="nav-menu-item">
+            <li class="nav-menu-item" id="menu-project" >
               <a href="/html/myproject.html">My Project</a>
-            </li>
-            <li id="menu-card" class="nav-menu-item">
+            </li>            
+            <li class="nav-menu-item" id="menu-card">
               <a href="/html/card.html">Card</a>
             </li>
-            <li id="menu-blog" class="nav-menu-item">
+            <li class="nav-menu-item" id="menu-blog">
               <a href="/html/blog.html">Blog</a>
             </li>
+            <li class="nav-menu-item, contact" id="menu-contact">
+              <a href="/html/contact.html">Contact</a>
+            </li>
+
           </ul>
         </div>
         <div class="nav--right">
-          <a href="./contact.html" class="kontak">Contact me</a>
+          <a href="/html/contact.html" class="kontak">Contact me</a>
         </div>
       </div>
     </nav>
+
+    <!-- blog -->
 
     <div class="blog-list">
       <div class="blog-item">

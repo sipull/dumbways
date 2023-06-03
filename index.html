@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="/css/home.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="icon" type="image/sipul" href="/picture/logo.png" />
+    <link rel="icon" type="image" href="/picture/logo.png" />
     <link
       rel="stylesheet"
       href="./Aset/fontawesome/fontawesome-free-6.4.0-web/css/all.css"
@@ -23,7 +23,7 @@
     <nav class="nav">
       <div class="nav--container">
         <div class="nav--left">
-          <a href="/index.html" class="logo">
+          <a href="#" class="logo">
             <img src="/picture/logo.png" alt="sipul" />
           </a>
           <div class="navbar__toggle" id="mobile-menu">
@@ -32,30 +32,26 @@
             <span class="bar"></span>
           </div>
           <ul class="nav--menu">
-            <div class="item-collapse">
-              <li id="menu-home" class="nav-menu-item">
-                <a href="/index.html" class="navbar--link">Home</a>
-              </li>
-            </div>
-            <div class="item-collapse">
-              <li id="menu-project" class="nav-menu-item">
-                <a href="/html/myproject.html" class="navbar--link">My Project</a>
-              </li>
-            </div>
-            <li id="menu-card" class="nav-menu-item">
-              <a href="/html/card.html" class="navbar--link">Card</a>
+            <li class="nav-menu-item" id="menu-home">
+              <a href="/index.html">Home</a>
             </li>
-            <div class="item-collapse">
-              <li id="menu-blog" class="nav-menu-item">
-                <a href="/html/blog.html" class="navbar--link">Blog</a>
-              </li>
-            </div>
+            <li class="nav-menu-item" id="menu-project" >
+              <a href="/html/myproject.html">My Project</a>
+            </li>            
+            <li class="nav-menu-item" id="menu-card">
+              <a href="/html/card.html">Card</a>
+            </li>
+            <li class="nav-menu-item" id="menu-blog">
+              <a href="/html/blog.html">Blog</a>
+            </li>
+            <li class="nav-menu-item, contact" id="menu-contact">
+              <a href="/html/contact.html">Contact</a>
+            </li>
+
           </ul>
         </div>
-        <div class="item-collapse">
-          <div class="nav--right">
-            <a href="/html/contact.html" class="kontak">Contact me</a>
-          </div>
+        <div class="nav--right">
+          <a href="/html/contact.html" class="kontak">Contact me</a>
         </div>
       </div>
     </nav>

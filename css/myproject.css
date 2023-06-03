@@ -138,7 +138,6 @@ label {
   background-color: #3f1400;
   color: white;
   padding: 8px 33px;
-  margin: 10px 0 10px 290px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -259,5 +258,19 @@ label {
     justify-content: center;
     gap: 40px;
     margin: 20px auto 40px auto;
+  }
+}
+
+@media only screen and (max-width: 390px){
+  form{
+    width: 80%;
+  }
+
+  form h1{
+    font-size: 26px;
+  }
+
+  .blog-item{
+  width: 77%;
   }
 }

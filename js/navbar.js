@@ -20,8 +20,8 @@ switch (lastItem) {
     break;
 
   case "card.html":
-    const cardElement = document.querySelector("#menu-blog");
-    blogElement.classList.add("active");
+    const cardElement = document.querySelector("#menu-card");
+    cardElement.classList.add("active");
     break;
 
   case "blog.html":
@@ -30,8 +30,8 @@ switch (lastItem) {
     break;
 
   case "contact.html":
-    const contactElement = document.querySelector("#menu-contact");
-    blogElement.classList.add("active");
+    const contactElement = document.getElementById("menu-contact");
+    contactElement.classList.add("active");
     break;
 }
 

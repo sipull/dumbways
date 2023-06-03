@@ -84,13 +84,17 @@ form {
 
 .submit {
   font-family: "Comfortaa", cursive;
-  background-color: #101222;
+  background-color: #ff6600;
   color: white;
   padding: 12px 20px;
   margin: 10px 0 10px 0;
   border: none;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.submit:hover{
+  background-color: #803300;
 }
 
 @media screen and (max-width: 390px) {

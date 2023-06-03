@@ -109,6 +109,10 @@
     right: 5%;
   }
 
+  .nav--left{
+    padding-left: 14px;
+  }
+
   .navbar__toggle .bar {
     display: block;
     cursor: pointer;

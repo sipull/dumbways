@@ -26,3 +26,21 @@
 // };
 
 // render();
+
+// document.getElementsByClassName("my-nice-class").style[0] = "max-width: 40%;max-height: 40%;"
+
+function myFunction() {
+    let dots = document.getElementById("dots");
+    let moreText = document.getElementById("more");
+    let btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }

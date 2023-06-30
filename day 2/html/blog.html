@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    <link
+      rel="stylesheet"
+      href="/Aset/fontawesome/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <link rel="icon" type="image/sipul" href="/picture/logo.png" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav class="nav">
+      <div class="nav--container">
+        <div class="nav--left">
+          <a href="/index.html" class="logo">
+            <img src="/picture/logo.png" alt="sipul" />
+          </a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav--menu">
+            <li class="nav-menu-item" id="menu-home">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="nav-menu-item" id="menu-project">
+              <a href="/html/myproject.html">My Project</a>
+            </li>
+            <li class="nav-menu-item" id="menu-card">
+              <a href="/html/card.html">Card</a>
+            </li>
+            <li class="nav-menu-item" id="menu-blog">
+              <a href="/html/blog.html">Blog</a>
+            </li>
+            <li class="nav-menu-item contact" id="menu-contact">
+              <a href="/html/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav--right">
+          <a href="/html/contact.html" class="kontak">Contact me</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- blog -->
+
+    <div class="blog-list">
+      <div class="blog-item">
+        <img class="blog-image" src="/picture/gambar.webp" alt="blog_img" />
+        <div class="blog-content">
+          <h1>Dies Natalis Fakultas Teknik</h1>
+          <div class="blog-detail">
+            <div class="duration">
+              <i class="fa-solid fa-calendar-days"></i>12 juli 2023 22:30 WIB
+            </div>
+            <div class="duration">
+              <i class="fa-solid fa-clock"></i>2 weeks ago
+            </div>
+          </div>
+          <div class="blog-tech">
+            <div><i class="fa-brands fa-react"></i> React Js</div>
+            <div><i class="fa-brands fa-node-js"></i> Node Js</div>
+            <div><i class="fa-solid fa-file-code"></i> TypeScript</div>
+          </div>
+          <p>
+            Setelah sekitar sembilan tahun diresmikan, Fakultas Teknik (FT)
+            Universitas Hasyim Asy’ari (Unhasy), baru kali ini Badan Eksekutif
+            Mahasiswa (BEM) merayakan Dies Natalis dengan acara meriah di
+            halaman gedung C Unhasy, Senin (18/7/2022).<span id="dots">...</span>
+            <span id="more">“Kegiatan ini merupakan
+            serangkaian program dari BEM Fakultas Teknik dengan harapan
+            menjadikan acara ini sebagai titik balik semangat baru bagi
+            mahasiswa Fakultas Teknik setelah pandemi,” ungkap ketua pelaksana,
+            Nia. Pada malam puncak ini, selain potong tumpeng ada pembagian
+            hadiah bagi pemenang lomba yang diadakan sejak Jumat (8/7/2022)
+            lalu. Lomba tersebut berupa Futsal dan Badminton untuk tingkat
+            Unhasy. Kompetisi game Mobile Legends untuk regional Jawa Timur.
+            Selain itu, penampilan group band Rain in July musik Jombang turut
+            memeriahkan di malam puncak. “Fakultas Teknik baru kali ini
+            mengadakan acara Dies Natalis. Untuk itu, harapan saya semoga ini
+            menjadi program kegiatan rutin untuk ke depannya dan semoga bisa
+            lebih bagus lagi untuk meningkatkan Dies Natalis Fakultas Teknik,”
+            ungkap salah satu penonton, Mabruri.</span>
+          </p>
+          <button onclick="myFunction()" id="myBtn" class="readmore">Read more</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/blog.js"></script>
+    <script src="/js/navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+html {
+  font-family: "Comfortaa", cursive;
+  background-color: #ebbb9341;
+}
+
+.menu {
+  width: 70%;
+  height: auto;
+  margin: 35px auto 35px auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+
+.left {
+  display: block;
+  margin: 20px;
+}
+
+.paragraf {
+  color: #000000;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.introduce {
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.info {
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+  text-align: left;
+  align-items: center;
+}
+
+.porto {
+  color: #cecece;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #7e1c03;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.porto:hover {
+  background-color: #cc640e;
+}
+
+.downloadcv {
+  text-decoration: none;
+  color: #7e1c03;
+  transition-duration: 0.4s;
+}
+
+.downloadcv:hover {
+  color: #cc640e;
+}
+
+.socialmedia {
+  display: flex;
+  text-align: left;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.socialmedia i {
+  color: #7e1c03;
+  transition-duration: 0.4s;
+}
+
+.socialmedia i:hover {
+  color: #cc640e;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+div.polaroid {
+  width: 80%;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.text {
+  padding: 20px;
+  display: block;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* MediaQuery */
+
+@media only screen and (max-width: 960px) {
+  .menu {
+    width: 87%;
+    height: auto;
+    margin: 40px auto 40px auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+  }
+}
